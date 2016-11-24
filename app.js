@@ -4,8 +4,8 @@ import mongoose from 'mongoose';
 
 import schema from './graphql';
 
-/*import crisisModel from './models/crisis';
-import { Root } from './graphql';*/
+import eventModel from './models/event';
+/*import { Root } from './graphql';*/
 
 
 var app = express();
@@ -18,9 +18,8 @@ var app = express();
 
  // Connect mongo database
 
-
-/*crisisModel.findById('57dfec699a892004311844dd', function (err, crisis) {
-    console.log(crisis._id);
+/*eventModel.find({'57e04e359a89200465255ca1', function (err, events) {
+    console.log(events);
 })*/
 
 // start server
